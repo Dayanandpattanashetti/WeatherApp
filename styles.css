@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  background: url("images/23279.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.675);
+  gap: 20px;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  > input {
+    width: 100%;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+  }
+  > input:focus {
+    outline: none;
+  }
+
+  img {
+    width: 40px;
+    height: 100%;
+  }
+}
+
+/* error */
+#error {
+  display: none;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  .temperature {
+    font-size: 60px;
+  }
+
+  #img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  .cityName {
+    font-size: 30px;
+  }
+}
+
+.bottom {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .humidity,
+  .wind {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    > img {
+      width: 33px;
+      height: 33px;
+    }
+  }
+  .text {
+    > p {
+      margin: 0;
+      font-size: 25px;
+    }
+  }
+}
